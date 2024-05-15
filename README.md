@@ -16,13 +16,13 @@ These instructions will get you a copy of the project up and running on your loc
 1. Clone the repository
 
    ```bash
-   git clone <repository-url>
+   git clone git@github.com:zauberware/weblogger.git
    ```
 
 2. Navigate into the cloned repository
 
    ```bash
-   cd <repository-name>
+   cd weblogger
    ```
 
 3. Install the dependencies
