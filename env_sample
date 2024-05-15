@@ -1,0 +1,11 @@
+PORT=3000
+INFO_LOG=/var/log/nginx/access.log
+ERROR_LOG=/var/log/nginx/error.log
+WEBSOCKET_URL=logs.example.com
+BASIC_AUTH=true
+BASIC_AUTH_USERNAME=adminuser
+BASIC_AUTH_PASSWORD=adminpassword
+NODE_ENV=production
+CORS=true
+CORS_ORIGINS=logs.example.com
+DEBUGMODE=false

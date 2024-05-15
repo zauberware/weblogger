@@ -1,0 +1,11 @@
+{
+  "ignore": [
+    "node_modules",
+    ".nvmrc",
+    ".gitignore",
+    ".git",
+    "README.md",
+    "access.log",
+    "error.log"
+  ]
+}
