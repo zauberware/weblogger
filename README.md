@@ -33,7 +33,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 4. Start the server
    ```bash
-   yarn start
+   yarn start # or yarn dev to start with nodemon
    ```
 
 The server will start on port 3000, or on the port specified in your environment variables.
