@@ -2,22 +2,22 @@ var ws = new WebSocket('<%= websocketUrl %>');
 
 ws.onopen = function () {
   console.log('Connected to server');
-
-  // get id from cookie
-  var id = document.cookie
-    .split('; ')
-    .find((row) => row.startsWith('id='))
-    ?.split('=')[1];
-  if (id) {
-    ws.send(JSON.stringify({ id }));
-  } else {
-    ws.send(JSON.stringify({}));
-  }
+  // future implementation for handling reconnection
+  // // get id from cookie
+  // var id = document.cookie
+  //   .split('; ')
+  //   .find((row) => row.startsWith('id='))
+  //   ?.split('=')[1];
+  // if (id) {
+  //   ws.send(JSON.stringify({ id }));
+  // } else {
+  //   ws.send(JSON.stringify({}));
+  // }
 };
 
 ws.onmessage = function (event) {
   var data = JSON.parse(event.data);
-  console.log('%cdata:', 'color: lime; font-size: 1.125rem;', data);
+
   if (data.id) {
     document.cookie = 'id=' + data.id;
   }
